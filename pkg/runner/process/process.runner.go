@@ -6,6 +6,6 @@ type ProcessRunner struct {
 	runner.BaseRunner
 }
 
-func (runner *ProcessRunner) SetConfig(config map[string]interface{})  {
-	runner.Config = config
+func NewProcessRunner() *ProcessRunner {
+	return &ProcessRunner{}
 }

@@ -6,6 +6,6 @@ type DockerContainerRunner struct {
 	runner.BaseRunner
 }
 
-func (runner *DockerContainerRunner) SetConfig(config map[string]interface{})  {
-	runner.Config = config
+func NewDockerContainerRunner() *DockerContainerRunner {
+	return &DockerContainerRunner{}
 }
